@@ -2,7 +2,7 @@
  * @Author: wang_zl2@hdec.com
  * @Date: 2025-12-05 10:11:39
  * @LastEditors: wang_zl2@hdec.com
- * @LastEditTime: 2025-12-05 10:15:03
+ * @LastEditTime: 2025-12-05 11:01:01
  * @FilePath: \npmTest\README.md
  * @Description: Description
 -->
@@ -19,14 +19,14 @@
 ## 安装
 直接把仓库代码放入项目或通过 npm（如已发布）：
 ```bash
-npm install coordconvert
+npm install wzlcoordconvert
 ```
 
 ## 使用示例
 
 ESM（package.json `"type":"module"` 或 .mjs）
 ```javascript
-import convert from './coordConvert/coordConvert.js';
+import convert from 'wzlcoordconvert';
 
 // 单点（传参形式）
 const p1 = convert(116.397128, 39.916527, convert.wgs84ToGcj02);
@@ -43,7 +43,7 @@ console.log(out);
 
 CommonJS
 ```javascript
-const convert = require('./coordConvert/coordConvert');
+const convert = require('wzlcoordconvert');
 
 // 使用方式相同（convert 是函数，内置转换函数为属性）
 const out = convert([[116.397128,39.916527]], convert.wgs84ToGcj02);

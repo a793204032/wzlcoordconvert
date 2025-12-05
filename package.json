@@ -1,5 +1,5 @@
 {
-  "name": "coordconvert",
+  "name": "wzlcoordconvert",
   "version": "1.0.0",
   "description": "经纬度坐标转换库：支持 WGS84、GCJ-02（高德/腾讯）、BD-09（百度）互转，支持批量与单点输入",
   "main": "main.js",
