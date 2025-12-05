@@ -1,4 +1,4 @@
-const { convertCoords } = require('./wzlcoordconvert/coordConvert.js');
+const convertCoords = require('./wzlcoordconvert/coordConvert.js').default || require('./wzlcoordconvert/coordConvert.js');
 
 module.exports = convertCoords;
 module.exports.convertCoords = convertCoords;

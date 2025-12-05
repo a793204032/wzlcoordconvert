@@ -1,19 +1,32 @@
 {
   "name": "wzlcoordconvert",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "经纬度坐标转换库：支持 WGS84、GCJ-02（高德/腾讯）、BD-09（百度）互转，支持批量与单点输入",
   "main": "main.js",
   "module": "main.js",
+  "types": "index.d.ts",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./main.js",
-      "require": "./main.cjs",
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./main.js"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./main.cjs"
+      },
       "default": "./main.js"
     }
   },
+  "files": [
+    "main.js",
+    "main.cjs",
+    "index.d.ts",
+    "wzlcoordconvert/"
+  ],
   "scripts": {
-    "test": "node main.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -36,7 +49,9 @@
     "latlng",
     "longitude-latitude",
     "map-utils",
-    "china-coordinates"
+    "china-coordinates",
+    "typescript",
+    "types"
   ],
   "author": "wangzhenlin",
   "license": "MIT",
