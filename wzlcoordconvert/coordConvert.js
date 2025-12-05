@@ -137,3 +137,4 @@ convertCoords.wgs84ToBd09 = wgs84ToBd09;
 convertCoords.bd09ToWgs84 = bd09ToWgs84;
 
 export default convertCoords;
+export { convertCoords };
