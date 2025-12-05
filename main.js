@@ -6,6 +6,10 @@
  * @FilePath: \npmTest\main.js
  * @Description: Description
  */
-import convert from './wzlcoordconvert/coordConvert.js';
+import { convertCoords } from './wzlcoordconvert/coordConvert.js';
 
-export const convertCoords = convert;
+// 默认导出
+export default convertCoords;
+
+// 同时提供具名导出
+export { convertCoords };
